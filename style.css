@@ -1,0 +1,152 @@
+*{
+    font-family: Open Sans,sans-serif;
+   
+}
+#heading{
+    color:rgb(34, 149, 221); 
+    text-align: center;
+    margin: 0 auto;
+    padding: 10px;
+    width: 100%;
+    max-width: 600px;
+    box-sizing: border-box;
+    @media (max-width: 600px) {
+        #heading {
+          padding: 5px;
+        }
+      }
+   
+}
+#heading h1{
+    margin-bottom: 5px;
+    font-size: 3rem;
+    
+
+}
+#scoreboard{
+    text-align: center;
+    margin: 0 auto;
+    padding: 20px;
+    width: 100%;
+    max-width: 600px;
+    box-sizing: border-box;
+    color:rgb(34, 149, 221); 
+    transform: translateY(-20%);
+    
+    @media (max-width: 600px) {
+        #heading {
+          padding: 10px;
+        }
+      }
+    
+   
+
+}
+#scoreboard p{
+    font-size:  3rem;
+    margin-bottom:0 ;
+    font-weight: 200;
+}
+#score{
+    display:flex;
+    justify-content: center;
+    font-size: 20px;
+    align-items: center;
+    width: 100%;
+    max-width: 100%;
+    padding: 20px;
+    box-sizing: border-box;
+    position: relative;
+    overflow: auto;
+    height: 100%;
+   
+}
+#score::before {
+    content: '';
+    position: absolute;
+    height:100%;
+    width: 2px;
+    background-color: black;
+    left: 50%;
+    transform: translateX(-50%);
+    margin-top:0;
+  }
+  #user, #computer {
+    flex: 1;
+    text-align: center;
+    
+  }
+  #userScore, #compScore {
+    font-size: 2em;
+  }
+#score p{
+    color:black;
+    margin-top: 30px;
+    font-size: 2em;
+}
+#startgame{
+   margin:0 auto;
+   width:100%;
+   text-align: center;
+   padding:10px;
+   max-width: 600px;
+   box-sizing: border-box;
+   min-height: 100%;
+   max-width: 100%;
+   
+   
+}
+#startgame #game{
+    font-size: 3rem;
+    font-weight: 500;
+    margin-bottom: 20px;
+    position: relative;
+    transform: translateY(-100%);
+
+}
+#choices{
+    display: flex;
+    justify-content: center;
+   
+}
+#rock,#paper,#scissor{
+    margin: 10px;
+    font-size: 2rem;
+    background-color: rgb(34, 149, 221); 
+    color:white;
+    padding: 10px 20px;
+    border-radius: 10%;
+    border: 1 rgb(41, 110, 153) solid;
+    cursor: pointer;
+   
+
+}
+#rock:hover{
+    background-color:rgb(21, 161, 248); 
+}
+#paper:hover{
+    background-color:rgb(21, 161, 248); 
+}
+#scissor:hover{
+    background-color:rgb(21, 161, 248); 
+}
+#reset{
+    font-size: 2rem;
+    background-color:rgba(255, 255, 255, 0.998);
+    color:rgb(21, 161, 248); 
+    padding: 10px 20px;
+    margin: 15px;
+    border-radius: 10%;
+    border: 1px silver solid;
+    cursor: pointer;
+   
+}
+#gamecount{
+    font-size: 2rem;
+
+}
+#newelement{
+    position: relative;
+    bottom: 0;
+    right: 0;
+}
